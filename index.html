@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed Up — F5 Idiomas | Teacher Fabi Crispim</title>
+  <meta name="description" content="Intensivão de inglês do zero. 5 semanas para você sair do pré-A1 e começar a se arriscar. Com a Teacher Fabi Crispim — F5 Idiomas." />
+  <link rel="canonical" href="https://fcinco.com.br" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy:    #1e2261;
+      --navy2:   #2d3180;
+      --copper:  #c4795a;
+      --copper2: #d4896a;
+      --cream:   #faf8f5;
+      --white:   #ffffff;
+      --ink:     #1a1a2e;
+      --mid:     #4a4a6a;
+      --muted:   #8a8aaa;
+      --border:  #e0ddf5;
+      --max:     880px;
+      --r:       8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.65;
+      font-size: 17px;
+    }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+    nav {
+      background: var(--navy);
+      padding: 18px 28px;
+    }
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-wrap { display: flex; flex-direction: column; line-height: 1.1; }
+    .logo-main {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: var(--white);
+      letter-spacing: -0.01em;
+    }
+    .logo-main span { color: var(--copper); }
+    .logo-sub {
+      font-size: 0.68rem;
+      color: #a0a8cc;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .nav-cta {
+      background: var(--copper);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: var(--r);
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--copper2); }
+
+    .hero {
+      background: var(--navy);
+      padding: 72px 28px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      right: -120px; top: -120px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(196,121,90,0.18);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      right: -60px; top: -60px;
+      width: 340px; height: 340px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(196,121,90,0.12);
+      pointer-events: none;
+    }
+    .hero-inner { max-width: var(--max); margin: 0 auto; position: relative; }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(196,121,90,0.15);
+      border: 1px solid rgba(196,121,90,0.35);
+      color: var(--copper2);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 32px;
+    }
+    .hero-eyebrow::before { content: '●'; font-size: 0.5rem; }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(2.8rem, 7vw, 4.6rem);
+      line-height: 1.05;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      max-width: 640px;
+      margin-bottom: 24px;
+    }
+    .hero h1 em { font-style: italic; color: var(--copper); }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: #b0b8e0;
+      max-width: 500px;
+      margin-bottom: 44px;
+      line-height: 1.7;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+    .btn-copper {
+      display: inline-block;
+      background: var(--copper);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 16px 36px;
+      border-radius: var(--r);
+      transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+    }
+    .btn-copper:hover {
+      background: var(--copper2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(196,121,90,0.35);
+    }
+    .hero-note { font-size: 0.88rem; color: #8890b8; }
+
+    .strip {
+      background: var(--copper);
+      overflow: hidden;
+      padding: 13px 0;
+      white-space: nowrap;
+    }
+    .strip-inner {
+      display: inline-block;
+      animation: ticker 24s linear infinite;
+    }
+    .strip-inner span {
+      display: inline-block;
+      padding: 0 36px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .strip-inner .dot { padding: 0 4px; opacity: 0.5; }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    section { padding: 88px 28px; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 14px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .problem { background: var(--navy); padding: 88px 28px; }
+    .problem h2 { color: var(--white); }
+    .problem .section-label { color: var(--copper); }
+    .problem-lead { color: #9098c8; max-width: 480px; margin-bottom: 52px; line-height: 1.7; }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--r);
+      overflow: hidden;
+    }
+    .problem-item {
+      background: rgba(255,255,255,0.03);
+      padding: 32px 28px;
+      transition: background 0.2s;
+    }
+    .problem-item:hover { background: rgba(196,121,90,0.08); }
+    .problem-item .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: rgba(196,121,90,0.3);
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+    .problem-item strong {
+      display: block;
+      color: var(--white);
+      font-size: 0.97rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .problem-item p { color: #7880a8; font-size: 0.9rem; line-height: 1.6; }
+
+    .learn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+      gap: 16px;
+      margin-top: 52px;
+    }
+    .learn-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r);
+      padding: 32px 28px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .learn-card:hover {
+      border-color: var(--copper);
+      box-shadow: 0 4px 20px rgba(196,121,90,0.12);
+    }
+    .learn-card .icon { font-size: 1.7rem; margin-bottom: 16px; display: block; }
+    .learn-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .learn-card p { font-size: 0.9rem; color: var(--mid); line-height: 1.6; }
+
+    .about { background: var(--navy); padding: 88px 28px; }
+    .about-inner {
+      max-width: var(--max); margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-img-box {
+      background: var(--navy2);
+      border-radius: var(--r);
+      aspect-ratio: 4/5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(196,121,90,0.25);
+      position: relative;
+      overflow: hidden;
+    }
+    .about-img-box::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--copper);
+    }
+    .about-placeholder { text-align: center; color: #4a5090; }
+    .about-initials {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 900;
+      color: var(--copper);
+      line-height: 1;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .about-placeholder small { font-size: 0.78rem; }
+    .about h2 { color: var(--white); margin-bottom: 20px; }
+    .about .section-label { color: var(--copper); }
+    .about p { color: #9098c8; line-height: 1.75; margin-bottom: 16px; font-size: 0.97rem; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+    .badge {
+      background: rgba(196,121,90,0.15);
+      border: 1px solid rgba(196,121,90,0.3);
+      color: var(--copper2);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.05em;
+    }
+
+    .testimonials .wrap { max-width: var(--max); margin: 0 auto; }
+    .testi-note {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 52px;
+    }
+    .testi-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r);
+      padding: 32px 28px;
+      position: relative;
+    }
+    .testi-card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--copper);
+      opacity: 0.2;
+      position: absolute;
+      top: 12px; left: 22px;
+      line-height: 1;
+    }
+    .testi-card blockquote {
+      font-style: italic;
+      color: var(--mid);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      padding-top: 20px;
+    }
+    .testi-card cite {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .testi-card cite::before {
+      content: '';
+      display: inline-block;
+      width: 24px; height: 2px;
+      background: var(--copper);
+    }
+
+    .pricing { background: var(--navy); padding: 88px 28px; }
+    .pricing .wrap { text-align: center; }
+    .pricing h2 { color: var(--white); margin-bottom: 52px; }
+    .pricing .section-label { color: var(--copper); }
+    .price-box {
+      background: var(--navy2);
+      border: 1.5px solid rgba(196,121,90,0.3);
+      border-radius: var(--r);
+      padding: 52px 44px;
+      max-width: 480px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .price-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--copper);
+    }
+    .price-label { color: #7880a8; font-size: 0.88rem; margin-bottom: 8px; }
+    .price-main {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      font-weight: 900;
+      color: var(--copper);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .price-alt { color: #7880a8; font-size: 0.92rem; margin-bottom: 36px; }
+    .price-features { text-align: left; list-style: none; margin-bottom: 36px; }
+    .price-features li {
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.93rem;
+      color: #b0b8e0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .price-features li::before { content: '✓'; color: var(--copper); font-weight: 700; flex-shrink: 0; }
+    .price-guarantee { color: #5860a0; font-size: 0.8rem; margin-top: 18px; }
+
+    .faq-list { margin-top: 52px; max-width: 640px; }
+    .faq-item { border-bottom: 1.5px solid var(--border); padding: 24px 0; }
+    .faq-item:first-child { border-top: 1.5px solid var(--border); }
+    .faq-q {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.02rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .faq-a { color: var(--mid); line-height: 1.7; font-size: 0.93rem; }
+
+    .final-cta {
+      background: var(--copper);
+      padding: 88px 28px;
+      text-align: center;
+    }
+    .final-cta h2 { color: var(--white); margin-bottom: 14px; }
+    .final-cta p { color: rgba(255,255,255,0.8); margin-bottom: 38px; font-size: 1.05rem; }
+    .btn-white {
+      display: inline-block;
+      background: var(--white);
+      color: var(--copper);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 40px;
+      border-radius: var(--r);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.15); }
+
+    footer { background: var(--navy); padding: 32px 28px; text-align: center; }
+    .footer-inner { max-width: var(--max); margin: 0 auto; }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .footer-logo span { color: var(--copper); }
+    .footer-tagline { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: #5860a0; margin-bottom: 16px; }
+    footer p { font-size: 0.8rem; color: #4a5090; }
+    footer a { color: #6870a8; text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .about-inner { grid-template-columns: 1fr; gap: 36px; }
+      .about-img-box { aspect-ratio: 3/2; }
+      .price-box { padding: 36px 24px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .strip-inner { animation: none; }
+      .btn-copper:hover, .btn-white:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo-wrap">
+      <span class="logo-main">f.<span>C</span></span>
+      <span class="logo-sub">Features for your Future</span>
+    </div>
+    <a class="nav-cta" href="#inscricao">Quero me inscrever</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">01 jul → 06 ago 2026 · Intensivão online</span>
+    <h1>Do zero ao<br/><em>primeiro</em> "hello."</h1>
+    <p class="hero-sub">
+      Speed Up é o intensivão para quem nunca estudou inglês ou estudou e esqueceu tudo. Em 5 semanas e mais de 30 horas de estudo, você sai do pré-A1 e começa a se arriscar de verdade.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-copper" href="#inscricao">Garantir minha vaga</a>
+      <span class="hero-note">R$&nbsp;196,00 à vista · Vagas limitadas</span>
+    </div>
+  </div>
+</header>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-inner">
+    <span>Greetings &amp; Introductions</span><span class="dot">·</span>
+    <span>Numbers &amp; Personal Info</span><span class="dot">·</span>
+    <span>Asking for Information</span><span class="dot">·</span>
+    <span>Shopping &amp; Ordering</span><span class="dot">·</span>
+    <span>Simple Conversations</span><span class="dot">·</span>
+    <span>Greetings &amp; Introductions</span><span class="dot">·</span>
+    <span>Numbers &amp; Personal Info</span><span class="dot">·</span>
+    <span>Asking for Information</span><span class="dot">·</span>
+    <span>Shopping &amp; Ordering</span><span class="dot">·</span>
+    <span>Simple Conversations</span><span class="dot">·</span>
+  </div>
+</div>
+
+<section class="problem">
+  <div class="wrap">
+    <span class="section-label">Você se identifica?</span>
+    <h2>Inglês sempre ficou<br/>para depois.</h2>
+    <p class="problem-lead">Se você está aqui, provavelmente uma dessas situações soa familiar.</p>
+    <div class="problem-grid">
+      <div class="problem-item">
+        <div class="num">01</div>
+        <strong>"Nunca aprendi de verdade."</strong>
+        <p>Estudou na escola, mas saiu sem conseguir formar uma frase.</p>
+      </div>
+      <div class="problem-item">
+        <div class="num">02</div>
+        <strong>"Travo na hora de falar."</strong>
+        <p>Entende alguma coisa, mas na hora H a boca trava e a vergonha vence.</p>
+      </div>
+      <div class="problem-item">
+        <div class="num">03</div>
+        <strong>"Tentei apps, não funcionou."</strong>
+        <p>Streak de 30 dias no Duolingo e ainda não consegue se apresentar.</p>
+      </div>
+      <div class="problem-item">
+        <div class="num">04</div>
+        <strong>"Não sei por onde começar."</strong>
+        <p>Assiste vídeos no YouTube, segue os teachers mais famosos, faz cursos de vários temas e tudo que aparece — mas mesmo assim não aprende.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="section-label">O que você aprende</span>
+    <h2>Ao final do Speed Up,<br/>você consegue.</h2>
+    <div class="learn-grid">
+      <div class="learn-card">
+        <span class="icon">👋</span>
+        <h3>Se apresentar</h3>
+        <p>Greetings, seu nome, origem, profissão e informações pessoais — com confiança.</p>
+      </div>
+      <div class="learn-card">
+        <span class="icon">🔢</span>
+        <h3>Usar números</h3>
+        <p>Preços, datas, telefones e quantidades. O tipo de coisa que aparece em todo lugar.</p>
+      </div>
+      <div class="learn-card">
+        <span class="icon">🗺️</span>
+        <h3>Pedir informações</h3>
+        <p>Perguntar endereço, horário, direções. Funcional e direto ao ponto.</p>
+      </div>
+      <div class="learn-card">
+        <span class="icon">🛍️</span>
+        <h3>Comprar e pedir</h3>
+        <p>Em uma loja ou restaurante — você pede, entende a resposta e resolve.</p>
+      </div>
+      <div class="learn-card">
+        <span class="icon">💬</span>
+        <h3>Responder perguntas</h3>
+        <p>Respostas curtas e diretas a perguntas simples. O básico que desfaz o bloqueio.</p>
+      </div>
+      <div class="learn-card">
+        <span class="icon">🚀</span>
+        <h3>Sair do zero</h3>
+        <p>Vocabulário inicial sólido e confiança para continuar aprendendo depois.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-inner">
+    <div class="about-img-box">
+      <img src="fabi.jpg" alt="Teacher Fabi Crispim" style="width:100%;height:100%;object-fit:cover;" />
+             </div>
+    </div>
+    <div class="about-text">
+      <span class="section-label">Quem ensina</span>
+      <h2>Teacher Fabi Crispim</h2>
+      <p>Professora de inglês com certificação CELTA (Cambridge Certificate for English Language Teaching to Adults) e mais de oito anos de experiência com alunos que aprenderam inglês do zero — exatamente como você vai fazer.</p>
+      <p>Especialista em ensino para adultos e exames Cambridge, ela conhece a fundo o que o idioma exige na prática — e como chegar lá de forma direta e sem enrolação.</p>
+      <p>O Speed Up é um novo método criado por ela, para quem está numa fase da vida que não tem tempo a perder. Um curso prático, focado em comunicação real e pensado para quem quer resultado no seu inglês, sem abrir mão da sua própria rotina. Estudando de onde e quando quiser.</p>
+      <div class="badges">
+        <span class="badge">CELTA Certified</span>
+        <span class="badge">Cursos Preparatórios Cambridge</span>
+        <span class="badge">F5 Idiomas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="wrap">
+    <span class="section-label">O que os alunos dizem</span>
+    <h2>Resultados reais,<br/>de pessoas reais.</h2>
+    <p class="testi-note">O que meus alunos dizem sobre as aulas da Teacher Fabi</p>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <blockquote>"Eu tinha muito receio de como seriam as aulas, achando que seria muito pesado, nada divertido, mas tem sido leve! Fácil de aprender e divertido também."</blockquote>
+        <cite>Julia, aluna do curso Básico A1</cite>
+      </div>
+      <div class="testi-card">
+        <blockquote>"Fabi, your classes are so amazing! I'm very thankful for all kindness and knowledge you've been giving us every week."</blockquote>
+        <cite>Karoline, aluna da turma Intermediário Avançado B2</cite>
+      </div>
+      <div class="testi-card">
+        <blockquote>"As aulas e o método dela são ótimos. Aprendi muito sobre pronúncia e tempos verbais. Estudar em grupo foi excelente."</blockquote>
+        <cite>Gabriel, ex-aluno do curso Básico A1</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="inscricao">
+  <div class="wrap">
+    <span class="section-label">Invista no seu inglês</span>
+    <h2>Simples e sem pegadinha.</h2>
+    <div class="price-box">
+      <p class="price-label">À vista</p>
+      <div class="price-main">R$&nbsp;196</div>
+      <p class="price-alt">ou 2&times; R$&nbsp;110,00 no cartão de crédito</p>
+      <ul class="price-features">
+        <li>5 semanas de curso · +30h de estudo</li>
+        <li>Grupo exclusivo no WhatsApp/Telegram</li>
+        <li>Materiais de apoio inclusos</li>
+        <li>Plataforma de estudo</li>
+        <li>Aulas com Teacher Fabi Crispim</li>
+      </ul>
+      <a class="btn-copper" href="#" target="_blank" rel="noopener" style="display:block;text-align:center;">Quero minha vaga agora</a>
+      <p class="price-guarantee">Vagas limitadas · Turma de 01/07 a 06/08/2026</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <span class="section-label">Dúvidas frequentes</span>
+    <h2>Antes de decidir.</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <p class="faq-q">Preciso ter algum conhecimento prévio de inglês?</p>
+        <p class="faq-a">Não. O Speed Up começa do absoluto zero — pré-A1. Se você nunca estudou, ou estudou e esqueceu tudo, é exatamente para você.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">As aulas são ao vivo? Tem gravação?</p>
+        <p class="faq-a">As aulas que forem gravadas ficarão disponíveis durante o curso.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Quanto tempo preciso dedicar por semana?</p>
+        <p class="faq-a">Você irá estudar diariamente pela plataforma. A meta é que você estude ao menos 7 horas por semana.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Como funciona o pagamento?</p>
+        <p class="faq-a">Você pode pagar R$&nbsp;196,00 à vista ou parcelar em 2&times; de R$&nbsp;110,00 no cartão de crédito.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">E se eu não gostar?</p>
+        <p class="faq-a">Você tem 7 dias a partir da data de compra para solicitar o reembolso integral, sem precisar justificar. É o seu direito garantido pelo Código de Defesa do Consumidor (Art. 49). Basta entrar em contato pelo nosso WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <h2>Sua vez de começar.</h2>
+  <p>01 de julho. Do zero ao primeiro "hello." Sem desculpa.</p>
+  <a class="btn-white" href="#inscricao">Garantir minha vaga</a>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">f.<span>C</span></div>
+    <div class="footer-tagline">Features for your Future</div>
+    <p>© 2026 F5 Idiomas · Teacher Fabi Crispim · <a href="https://fcinco.com.br">fcinco.com.br</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
